@@ -19,5 +19,5 @@
 #
 ---
 include:
-  - board: nrf52840_adafruit_feather
+  - board: adafruit_feather_nrf52840
     shield: nice60
