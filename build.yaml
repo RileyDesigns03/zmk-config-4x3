@@ -20,5 +20,5 @@
 ---
 include:
   - board: adafruit_feather_nrf52840
-    shield: boardsource3x4
-
+    shield: nice60
+    extra_modules: ./nice60
