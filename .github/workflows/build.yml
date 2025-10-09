@@ -1,6 +1,12 @@
 name: Build ZMK firmware
+
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+    with:
+      board_shield_matrix: |
+        adafruit_feather_nrf52840 nice60
+      extra_build_args: -DZMK_EXTRA_MODULES=nice60
+
